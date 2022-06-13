@@ -1,0 +1,10 @@
+.reviews-section{
+  position: relative;
+
+  &::before{
+    content: url(../img/circle-decor.png);
+    position: absolute;
+    bottom: -24px;
+    left: 5%;
+  }
+}

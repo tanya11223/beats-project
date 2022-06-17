@@ -1,17 +1,17 @@
 .section{
   height: 100vh;
-  min-height: 650px;
+  min-height: rem(652px);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .section__title{
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   font-family: $font-stack2;
   text-transform: uppercase;
-  margin-bottom: 53px;
+  margin-bottom: 3.4rem;
   text-align: center;
 
   &--white{

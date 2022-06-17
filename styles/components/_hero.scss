@@ -2,12 +2,12 @@
 
   background-color:#F5F5F5;
   height: 100vh;
-  min-height: 650px;
+  min-height: 40.7rem;
   position: relative;
 
   &::before{
     position: absolute;
-    bottom: -25px;
+    bottom: -1.6rem;
     right: 5%;
     content: url(../img/Rectangle.png) ;
   }
@@ -19,25 +19,57 @@
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding-top: 24px;
-  padding-bottom: 70px;
-  
+  padding-top: 1.5rem;
+  padding-bottom: 4.4rem; 
+
+  @include tablets {
+    background: none;
+  }
 }
 
 .hero__title-section{
   width: 46%;
+
+  @include tablets{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::before{
+      content: url(../img/tablets/tablet-headphones.png);
+    }
+  }
 }
+
+.hero__icons-section{
+  @include tablets{
+    display: none;
+  }
+  @include phones{
+    display: none;
+  }
+}
+
 .hero__main-title{
   font-family: $font-stack2;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.1;
-  margin-bottom: 22px;
+  margin-bottom: 1.4rem;
 }
 
 .hero__title-desc{
-  font-size: 21px;
-  margin-bottom: 36px;
+  font-size: 1.4rem;
+  margin-bottom: 2.25rem;
   padding-right: 10%;
+
+  @include tablets{
+    padding: 0 25%;
+  }
 }
+

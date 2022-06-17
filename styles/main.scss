@@ -1,5 +1,10 @@
 $containerWidth: 940px;
 
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
 //colors
 $accent-color: #E01F3D;
 $primary-color: #292929;
@@ -13,6 +18,9 @@ $font-stack2: 'Play', sans-serif;
 
 //normalize
 @import url(./layout/normalize.css);
+
+//media
+@import "./layout/media";
 
 //setups
 @import "./layout/layout";
@@ -35,3 +43,4 @@ $font-stack2: 'Play', sans-serif;
 @import "./components/forms";
 @import "./components/radio";
 @import "./components/fixed-menu";
+@import "./components/hamburger";

@@ -1,3 +1,15 @@
+html{
+  font-size: 16px;
+
+  @include tablets{
+    font-size: 16px - 1px;
+  }
+
+  @include phones{
+    font-size: 16px - 2px;
+  }
+
+}
 html,body{
   height: 100%;
 }
@@ -15,16 +27,17 @@ body{
   flex: 1;
   position: relative;
   width: 100%;
-  min-width: $containerWidth + 20px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
+  width: 95%;
+  max-width: $containerWidth;
   margin: 0 auto;
-  width: $containerWidth;
   position: relative;
 }
+
 //tags style reset 
 
 a{

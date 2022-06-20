@@ -38,12 +38,18 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-
-    &::before{
-      content: url(../img/tablets/tablet-headphones.png);
-    }
-  }
 }
+
+&::before{
+  content: "";
+  width: rem(323px);
+  height: rem(323px);
+  background: url(../img/tablets/tablet-headphones.png) center center / contain no-repeat;
+
+}
+
+}
+
 
 .hero__icons-section{
   @include tablets{
@@ -70,6 +76,10 @@
 
   @include tablets{
     padding: 0 25%;
+  }
+
+  @include phones{
+    padding: 0 17%;
   }
 }
 

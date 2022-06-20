@@ -1,6 +1,13 @@
 .benefit{
   text-align: center;
+
+  @include phones{
+    display: flex;
+    text-align: left;
+  }
 }
+
+
 
 .benefit__image-wrapper{
   display: inline-block;
@@ -11,6 +18,14 @@
   border-radius: 50%;
   overflow: hidden;
   margin-bottom: 1.5rem;
+
+  @include phones{
+    margin-bottom: 0;
+  }
+}
+
+.benefit__image{
+  margin-right: rem(12px);
 }
 
 .benefit__icon{
@@ -23,6 +38,10 @@
 .benefit__text{
   text-align: center;
   padding: 0 0.75rem;
+
+  @include phones{
+    text-align: left;
+  }
 }
 
 .benefit__title{
@@ -35,4 +54,8 @@
 .benefit__desc{
   font-family: $font-stack2;
   width: 15.5rem;
+
+  @include phones{
+    width: 18.5rem;
+  }
 }

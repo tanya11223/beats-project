@@ -52,15 +52,26 @@
 .form{
   @include tablets{
     flex-direction: column;
-    padding: 0 18%;
+    padding: 0% 18%;
+    margin-right: 0;
   }
 }
 
 
+.form__input{
+  @include tablets{
+    height: rem(36px);
+  }
+}
 
 .form__controls{
   display: flex;
   flex-wrap: wrap;
 }
 
-
+.form__btn{
+  @include tablets{
+    display: flex;
+    justify-content: center;
+  }
+}

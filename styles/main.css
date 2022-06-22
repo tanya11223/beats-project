@@ -98,11 +98,25 @@ img {
 
 .hero {
   background-color: #F5F5F5;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 40.7rem;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: 100vh;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: 100vh;
+  }
 }
 .hero::before {
   position: absolute;

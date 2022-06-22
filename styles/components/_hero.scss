@@ -1,9 +1,19 @@
 .hero{
 
   background-color:#F5F5F5;
-  height: fit-content;
-  min-height: 100vh;
+  height: 100vh;
+  min-height: 40.7rem;
   position: relative;
+
+  @include tablets{
+    height: fit-content;
+    min-height: 100vh;
+  }
+
+  @include phones{
+    height: fit-content;
+    min-height: 100vh;
+  }
 
   &::before{
     position: absolute;

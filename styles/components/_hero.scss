@@ -1,8 +1,8 @@
 .hero{
 
   background-color:#F5F5F5;
-  height: 100vh;
-  min-height: 40.7rem;
+  height: fit-content;
+  min-height: 100vh;
   position: relative;
 
   &::before{

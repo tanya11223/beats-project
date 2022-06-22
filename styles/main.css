@@ -98,8 +98,10 @@ img {
 
 .hero {
   background-color: #F5F5F5;
-  height: 100vh;
-  min-height: 40.7rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 100vh;
   position: relative;
 }
 .hero::before {
@@ -332,8 +334,10 @@ img {
 }
 
 .section {
-  height: 100vh;
-  min-height: 40.75rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

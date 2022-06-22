@@ -1,5 +1,5 @@
 $containerWidth: 940px;
-
+$basefontSize: 16px;
 //breakpoints
 
 $tablets: 768px;
@@ -44,3 +44,6 @@ $font-stack2: 'Play', sans-serif;
 @import "./components/radio";
 @import "./components/fixed-menu";
 @import "./components/hamburger";
+@import "./components/map";
+@import "./components/footer";
+@import "./components/socials";

@@ -36,17 +36,11 @@
     }
 
     &--textarea{
-      width: 28.2rem;
-      height: 10.25rem;
+      width: rem(450px);
+      height: 9.5rem;
       resize: none;
-    }
   }
-
-  &__title{
-    font-family: $font-stack2;
-    color: #fff;
-    margin-bottom: 0.4rem;
-  }
+}
 }
 
 .form{
@@ -55,8 +49,34 @@
     padding: 0% 18%;
     margin-right: 0;
   }
+
+  @include phones{
+    padding: 0%;
+  }
 }
 
+.form__title{
+  font-family: $font-stack2;
+  color: #fff;
+  margin-bottom: 0.4rem;
+}
+
+.form__controls{
+  display: flex;
+  flex-wrap: wrap;
+
+  @include phones{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.form__btn{
+  @include tablets{
+    display: flex;
+    justify-content: center;
+  }
+}
 
 .form__input{
   @include tablets{
@@ -64,14 +84,12 @@
   }
 }
 
-.form__controls{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.form__btn{
+.form__input--textarea{
   @include tablets{
-    display: flex;
-    justify-content: center;
+    height: auto;
+    width: rem(466px);
+}
+  @include phones {
+    width: 30.75rem;
   }
 }
